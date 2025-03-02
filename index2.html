@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css connect -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- js connect -->
+    <link rel="stylesheet" href="dom.js">
+    <!-- TAILWIND  -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="poppins-thin">
+    
+    <section class="bg-[#F4F7FF]">
+    <!-- navbar -->
+      <div class="flex justify-between items-center
+      pt-5 px-2 mx-5 bg-white rounded-lg content-center " >
+        <div class="flex items-center
+        
+        ">
+            <img src="/assets/logo.png" alt="">
+            <h1 class="text-4xl font-normal pl-2">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <button class=" bg-blue-600 rounded-xl p-2 text-white font-medium mb-8
+        "onclick="document.location='index.html'"> Back to Desk</button>
+       
+    </div>
+    
+    <h1 class="text-3xl font-medium text-center pt-2">Blogs</h1>
+<div class="pt-5 px-2 mx-3">
+    <div class="mb-8">
+        <h2 class="text-2xl font-normal bg-white p-3 m-1">Question-1: What are the different ways to select an element in the DOM?</h2>
+        <p class="bg-white p-3 m-1 font-normal text-slate-600">The approaches to select DOM elements in JavaScript are:<br>
+
+          <span class="text-slate-500">
+            Using getElementById<br>
+            Using getElementsByClassName<br>
+            Using getElementsByTagName<br>
+            Using querySelector<br>
+            Using querySelectorAll</p>
+          </span>        
+         
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-normal bg-white p-3 m-1">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+        </h2>
+        <p class="bg-white p-3 m-1 font-normal text-slate-600"><strong>innerHTML: </strong>When you use the innerHTML property, it reads both the HTML markup and the text content of the element<br>
+          <strong>innerText:</strong> When you use innerText to read the content of an element, it returns the text as it appears on screen. It ignores HTML tags. And it also does not include text that is hidden with CSS styles.<br>
+          <strong>textContent:</strong> The textContent property also ignores all HTML tags and returns only the text. Whiles innerText reads text as it is rendered on screen, textContent reads text as it is in the markup. It also returns all text, whether it's rendered on screen or not.</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-normal bg-white p-3 m-1">Question-3: What is event delegation in the DOM?</h2>
+        <p class="bg-white p-3 m-1 font-normal text-slate-600">Event delegation is a technique in JavaScript where a single event listener is attached to a parent element instead of attaching event listeners to multiple child elements.</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-normal bg-white p-3 m-1">Question-4: What is event bubbling in the DOM?</h2>
+        <p class="bg-white p-3 m-1 font-normal text-slate-600">Event bubbling in JavaScript is a mechanism where an event triggered on a child element propagates upward through its ancestors in the DOM.</p>
+    </div>
+
+    <div class="pb-1 ">
+        <h2 class="text-2xl font-normal bg-white p-3 m-1">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+        <p class="bg-white p-3 m-1 font-normal text-slate-600 ">The simplest way to create a new element in JavaScript is by using the document. createElement() method.<br>
+          The Document object provides a method createElement() to create an element and appendChild() method to add it to the HTML DOM.<br>
+          The remove() method directly removes an HTML element from the DOM. The removeChild() method removes a specified child element from its parent in the DOM.</p>
+    </div>
+
+</div>
+
+    </section>
+</section>
+    
+</body>

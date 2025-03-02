@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css connect -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- js connect -->
+     <link rel="stylesheet" href="dom.js">
+     
+    <!-- TAILWIND  -->
+<script>
+    
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="poppins-thin">
+   
+    
+<section id="fullBody" class="bg-[#F4F7FF] pt-5">
+<!-- navbar -->
+  <div class="flex justify-between items-center
+  py-5 px-2 mx-5 bg-white rounded-lg content-center " >
+    <div class="flex items-center
+    
+    ">
+        <img src="/assets/logo.png" alt="">
+        <h1 class="text-4xl font-normal pl-2">Dev<span class="font-bold">Board</span></h1>
+    </div>
+   
+    <div class="flex justify-between center gap-x-4
+    pr-3"> 
+    <div class="flex justify-between items-center px-2
+    gap-x-2 bg-[#F4F7FF] rounded-2xl">
+        <input type="checkbox" checked="checked" class="checkbox  border-indigo-600 bg-indigo-500 checked:bg-orange-400 checked:text-orange-800 checked:border-orange-500 p-1" />
+        <h2 id="digit-2" class="text-3xl font-semibold">23</h2>
+    </div>
+   
+        <img src="/assets/theme-btn.png" class=""onclick="changeBackgroundColor()" alt="">
+    </div>
+</div>
+<!-- body part -->
+<div class="grid grid-cols-[3fr_1fr] ">
+    <div>
+<!-- 2nd row -->
+<section class=" pt-5  mx-5 border-b-2 border-dashed border-[#c7d5f9]">
+    <div class="grid grid-cols-[1fr_2fr_1fr] gap-4 bg-white">
+        <div class="">
+            <div class="flex text-center items-center bg-[#F4F7FF] p-3 m-4 rounded-lg">
+                <div class="bg-white p-3 rounded-full">
+                    <input type="checkbox" checked="checked" class="checkbox  border-indigo-600 bg-indigo-500 checked:bg-orange-400 checked:text-orange-800 checked:border-orange-500 p-1" />
+                </div>
+                <div class="">
+                    <h4 class="text-xl font-normal"> Task Assigned</h4>
+                    <h2 id="digit-1" class="text-3xl font-medium">6</h2>
+                </div>
+            </div>
+           
+        
+        </div>
+        <a href="index2.html">
+            <div id="discover" class="flex items-center rounded-2xl p-2 m-4 bg-gradient-to-r from-blue-700 via-blue-800 to-violet-500">
+                <img src="/assets/board.png" alt="">
+                <h2 class="text-3xl p-3 text-white font-normal">Discover Something New Today!</h2>
+            </div>
+        </a>
+        
+        <div class="flex items-center bg-[#F4F7FF] p-3 m-4 rounded-lg">
+           <img class="pr-4" src="assets/calender.png" alt="">
+            <div class="">
+                <h2 class="text-xl font-normal " id="formattedDate"></h2>
+                
+            </div>
+        
+        </div>
+    </div>
+    
+    </section>
+
+<!-- Box-Button -->
+    <section class="pt-5 grid grid-cols-[auto_auto_auto] gap-4 mx-5 bg-white p-4 mb-4 rounded-lg ">
+    <div class="flex-col gap-y-5 bg-[#F4F7FF] p-3">
+        <h4 class="text-xl font-normal bg-white p-2"> ShopEase</h4>
+        <h2 id="head-1" class="text-3xl font-medium p-2">Fix Mobile Button Issue </h2>
+        <h4 class="text-xl font-normal bg-white p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</h4>      
+    
+    <div class="flex justify-between p-2">
+        <div>
+            <h4 class="font-normal">DeadLine</h4>
+            <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <button id="myBtn-1" class="colorButton bg-blue-600 rounded-xl p-2 text-white font-medium
+        " onclick="myFunction(this)"> Completed</button>
+    </div>
+    </div>
+
+    <div class="flex-col gap-y-5 bg-[#F4F7FF] p-3">
+        <h4 class="text-xl font-normal bg-white p-2"> Soft Pay</h4>
+        <h2 id="head-2" class="text-3xl font-medium p-2">Add Pay Successful Modal </h2>
+        <h4 class="text-xl font-normal bg-white p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</h4>      
+    
+    <div class="flex justify-between p-2">
+        <div>
+            <h4 class="font-normal">DeadLine</h4>
+            <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <button id="myBtn-2" class="colorButton bg-blue-600 rounded-xl p-2 text-white font-medium
+        " onclick="myFunction(this)" > Completed</button>
+    </div>
+    </div>
+
+    <div class="flex-col gap-y-5 bg-[#F4F7FF] p-3">
+        <h4 class="text-xl font-normal bg-white p-2"> Meta</h4>
+        <h2 id="head-3"  class="text-3xl font-medium p-2">Add new reaction </h2>
+        <h4 class="text-xl font-normal bg-white p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</h4>      
+    
+    <div class="flex justify-between p-2">
+        <div>
+            <h4 class="font-normal">DeadLine</h4>
+            <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <button id="myBtn-3" class="colorButton bg-blue-600 rounded-xl p-2 text-white font-medium
+        " onclick="myFunction(this)" > Completed</button>
+    </div>
+    </div>
+    
+    <div class="flex-col gap-y-5 bg-[#F4F7FF] p-3">
+        <h4 class="text-xl font-normal bg-white p-2"> Programming Hero</h4>
+        <h2 id="head-4" class="text-3xl font-medium p-2">Fix Video Loading Issue </h2>
+        <h4 class="text-xl font-normal bg-white p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</h4>      
+    
+    <div class="flex justify-between p-2">
+        <div>
+            <h4 class="font-normal">DeadLine</h4>
+            <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <button id="myBtn-4" class="colorButton bg-blue-600 rounded-xl p-2 text-white font-medium
+        " onclick="myFunction(this)" > Completed</button>
+    </div>
+    </div>
+
+    <div class="flex-col gap-y-5 bg-[#F4F7FF] p-3">
+        <h4 class="text-xl font-normal bg-white p-2"> Google LLC</h4>
+        <h2 id="head-5" class="text-3xl font-medium p-2">Integrated AI search</h2>
+        <h4 class="text-xl font-normal bg-white p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</h4>      
+    
+    <div class="flex justify-between p-2">
+        <div>
+            <h4 class="font-normal">DeadLine</h4>
+            <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <button id="myBtn-5" class="colorButton bg-blue-600 rounded-xl p-2 text-white font-medium
+        " onclick="myFunction(this)" > Completed</button>
+    </div>
+    </div>
+
+    <div class="flex-col gap-y-5 bg-[#F4F7FF] p-3">
+        <h4 class="text-xl font-normal bg-white p-2"> Polygon Tech</h4>
+        <h2 id="head-6" class="text-3xl font-medium p-2">Review Ami Probashi Site </h2>
+        <h4 class="text-xl font-normal bg-white p-2"> Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</h4>      
+    
+    <div class="flex justify-between p-2">
+        <div>
+            <h4 class="font-normal">DeadLine</h4>
+            <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <button id="myBtn-6" class="colorButton bg-blue-600 rounded-xl p-2 text-white font-medium
+        " onclick="myFunction(this)" >Completed</button>
+    </div>
+    </div>
+
+    </section>
+    </div>
+
+<!-- Activity Part -->
+<div class="text-xl font-normal bg-white text-center p-4 m-4 rounded-lg">
+    <div class="flex gap-2 justify-center pb-3 mb-3 border-b-2 border-dashed border-[#c7d5f9]">
+        <img src="assets/activity.png" alt="">
+        <h3>Activity Part</h3>
+    </div>
+    
+        <div>
+            <button class=" bg-blue-600 rounded-xl p-2 text-white font-medium mb-8" onclick="clearHistory()"> Clear History</button>
+            <div id="history">
+           
+            </div>
+        </div>
+     
+</div>
+
+</div>
+
+</section>
+
+<script src="dom.js"></script>
+</body>
+</html>
